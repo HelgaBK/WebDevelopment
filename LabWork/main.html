@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Інтернет-магазин ALLO.ua</title>
+	<meta charset="utf-8">
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" />
+</head>
+<body onload="startSlideshow()">
+	<div id="header">
+		<div class="header-content max-width">
+			<div class="company-information">
+				<img class="logo" src="img/logo.png" width="45" height="45" alt="АЛЛО" />
+				<div>
+					<div class="company-name">
+						АЛЛО
+					</div>
+					ПРОСТО ЖИТИ СМАРТ
+				</div>
+			</div>
+			<div class="contacts">
+				<div class="phones">
+					(0-800) 200 100<br>
+					(0-800) 300 100
+				</div>
+				<a class="feedback-button" onclick="showFeedbackPopup()" href="#">Зворотний зв'язок</a>
+			</div>
+		</div>
+	</div>
+	<div id="menu">
+		<div class="max-width">
+			<ul>
+				<li>
+					<a href="#">
+						Головна
+					</a>
+				</li>
+					<li>|</li>
+				<li>
+					<a href="#">
+						Каталог
+					</a>
+				</li>
+					<li>|</li>
+				<li>
+					<a href="#">
+						Доставка і оплата
+					</a>
+				</li>
+					<li>|</li>
+				<li>
+					<a href="#">
+						Список цін
+					</a>
+				</li>
+					<li>|</li>
+				<li>
+					<a href="#">
+						Контакти
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="slider">
+		<div id="slider-image"></div>
+		<div class="arrows max-width" class="max-width">
+			<div class="arrow-left" onclick="changeSlide(-1)">
+				<img src="img/arrow-left.png" />
+			</div>
+			<div class="arrow-right" onclick="changeSlide(1)">
+				<img src="img/arrow-right.png" />
+			</div>
+		</div>
+	</div>
+	<div id="breadcrumbs" class="max-width">
+		<a href="#">Каталог</a> &gt; <a href="#">Телефони</a> &gt; <a href="#">Смартфони</a>
+	</div>
+	<div id="content" class="max-width">
+		<div id="leftblock">
+			<ul class="left-menu">
+				<li>
+					<a href="#">
+						Ноутбуки
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Телефони
+					</a>
+					<ul class="submenu">
+						<li class="current">
+							<a href="#">
+								Смартфони
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Моноблоки
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Слайдери
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Розкладні
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						Планшети
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Аудіо
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Фотоапарати
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Аксесуари
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="centerblock">
+			<div class="product">
+				<img class="product-photo" src="img/item1.jpg" />
+				<div class="product-description">
+					Huawei P30 Lite
+				</div>
+				<div class="product-footer">
+					<div class="price">
+						5999 грн
+					</div>
+					<img class="buy-button" src="img/cart.png" />
+				</div>
+			</div>
+			<div class="product">
+				<img class="product-photo" src="img/item2.jpg" />
+				<div class="product-description">
+					Samsung Galaxy A50
+				</div>
+				<div class="product-footer">
+					<div class="price">
+						6799 грн
+					</div>
+					<img class="buy-button" src="img/cart.png" />
+				</div>
+			</div>
+			<div class="product">
+				<img class="product-photo" src="img/item3.jpg" />
+				<div class="product-description">
+					Xiaomi Redmi 5 Plus
+				</div>
+				<div class="product-footer">
+					<div class="price">
+						5199 грн
+					</div>
+					<img class="buy-button" src="img/cart.png" />
+				</div>
+			</div>
+			<div class="product">
+				<img class="product-photo" src="img/item4.jpg" />
+				<div class="product-description">
+					Xiaomi Redmi Note
+				</div>
+				<div class="product-footer">
+					<div class="price">
+						5499 грн
+					</div>
+					<img class="buy-button" src="img/cart.png" />
+				</div>
+			</div>
+			<div class="product">
+				<img class="product-photo" src="img/item5.jpg" />
+				<div class="product-description">
+					Xiaomi Redmi 5
+				</div>
+				<div class="product-footer">
+					<div class="price">
+						4999 грн
+					</div>
+					<img class="buy-button" src="img/cart.png" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer-content max-width">
+			<div>
+				© ТОВ “Алло” 1998-2019.<br>
+				Всі права захищені.
+			</div>
+			<div></div>
+			<div>
+				<ul>
+					<li>
+						<a href="#">
+							Головна
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Каталог
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Доставка і оплата
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Список цін
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Контакти
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div></div>
+			<div class="about-developer">
+				<div>
+					<img src="img/dev.png" />
+				</div>
+				<div>
+					<a href="#">Розробник</a> –<br>
+					Карпишин Ольга
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup">
+		<div class="feedback-window">
+			<img class="feedback-window-close-button" src="img/close.png" onclick="closeFeedbackPopup()" />
+			<div class="feedback-window-header">
+				Зворотний зв'язок
+			</div>
+			<form onsubmit="formSubmitHandler(event)">
+				<div class="input-wrapper">
+					Ім'я
+					<input class="feedback-field" type="text" name="name" required="true" />
+					<div class="input-warning">!</div>
+				</div>
+				<div class="input-wrapper">
+					Телефон
+					<input class="feedback-field" type="text" name="phone" required="true" />
+					<div class="input-warning">!</div>
+				</div>
+				<div class="input-wrapper">
+					Email
+					<input class="feedback-field" type="email" name="email" required="true" />
+					<div class="input-warning">!</div>
+				</div>
+				<div class="input-wrapper">
+					Повідомлення
+					<textarea class="feedback-field" name="message" required="true"></textarea>
+					<div class="input-warning">!</div>
+				</div>
+				<button type="submit" class="submit-button">Відправити</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,333 @@
+.buy-button {
+	cursor: pointer;
+}
+
+#centerblock {
+	flex: 3;
+	font-size: 0;
+}
+
+#content {
+	display: flex;
+}
+
+#leftblock {
+	flex: 1;
+	padding: 5px;
+}
+
+.left-menu li {
+	list-style-type: none;
+}
+
+.price {
+	font-weight: bold;
+}
+
+.product {
+	background-color: #d8dea2;
+	display: inline-block;
+	font-size: 1rem;
+	margin: 0.5%;
+	padding: 16px;
+	width: 31%;
+}
+
+.product-description {
+	margin-bottom: 10px;
+}
+
+.product-footer {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-photo {
+	height: auto;
+	width: 100%;
+}
+
+.submenu {
+	padding-left: 30px;
+}
+
+.submenu > li {
+	list-style-type: disc !important;
+}
+
+.submenu > .current {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.feedback-field {
+	border: 1px solid #333;
+	display: block;
+	padding: 5px;
+	width: 100%;
+}
+
+.feedback-field:invalid + .input-warning {
+	display: block;
+}
+
+.feedback-window-close-button {
+	cursor: pointer;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
+.feedback-window {
+	background-color: white;
+	max-width: 80%;
+	padding: 25px;
+	position: relative;
+	text-align: center;
+	width: 320px;
+}
+
+.feedback-window textarea {
+	min-height: 150px;
+	resize: none;
+}
+
+.feedback-window-header {
+	font-size: 2em;
+	margin-bottom: 15px;
+}
+
+.input-wrapper {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.submit-button {
+	background-color: #e31837;
+	border: none;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.input-warning {
+	background-color: #faa;
+	bottom: 2.5px;
+	display: none;
+	font-weight: bold;
+	min-width: 1em;
+	right: 2.5px;
+	padding: 1px;
+	position: absolute;
+}
+
+#popup {
+	align-items: center;
+	animation-duration: 1s;
+	animation-name: fade-in;
+	background-color: rgba(0, 0, 0, 0.25);
+	bottom: 150px;
+	display: none;
+	justify-content: center;
+	left: 0;
+	right: 0;
+	position: fixed;
+	top: 0;
+}
+
+.about-developer {
+	display: flex;
+}
+
+#footer {
+	background-color: #e31837;
+	bottom: 0;
+	color: white;
+	position: fixed;
+	width: 100%;
+}
+
+#footer ul {
+	margin: 0;
+}
+
+#footer li {
+	list-style-type: none;
+	margin-bottom: 3px;
+}
+
+.footer-content {
+	display: flex;
+}
+
+.footer-content > div {
+	flex-grow: 1;
+}
+
+.company-information {
+    display: flex;
+    padding: 10px;
+}
+
+.company-name {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#company-name-and-description {
+    padding: 10px;
+}
+
+.contacts {
+    text-align: right;
+}
+
+.feedback-button {
+    color: #666;
+    font-size: 1.5em;
+    text-decoration: underline dashed;
+}
+
+#header {
+    font-size: 1.15em;
+    color: #e31837;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.phones {
+    font-family: 'phonesFont', sans-serif;
+    font-size: 1.5em;
+}
+
+@font-face {
+    font-family: 'phonesFont';
+    src: url(phonesFont.woff2) format('woff2');
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+body {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 200px;
+}
+
+.max-width {
+	box-sizing: content-box;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 980px;
+	padding: 12px;
+}
+
+ul {
+	padding: 0;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-out {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#menu {
+	background-color: #e31837;
+	color: white;
+}
+
+#menu ul {
+	display: flex;
+	font-size: 1.3em;
+	justify-content: space-around;
+	margin: 0;
+}
+
+#menu li {
+	list-style-type: none;
+}
+
+.arrow-left {
+	left: 10px;
+}
+
+.arrow-right {
+	right: 10px;
+}
+
+.arrows {
+	height: 100%;
+	padding-bottom: 0;
+	padding-top: 0;
+	position: relative;
+	top: -400px;
+}
+
+.arrows div {
+	position: absolute;
+	top: 50%;
+}
+
+.arrows img {
+	cursor: pointer;
+	display: block;
+	margin-top: -50%;
+}
+
+.fade {
+	animation-duration: 0.5s;
+}
+
+.fade-in {
+	animation-name: fade-in;
+}
+
+.fade-out {
+	animation-name: fade-out;
+}
+
+#slider {
+	height: 400px;
+}
+
+#slider-image {
+	background-image: url('img/sl1.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	height: 100%;
+}
